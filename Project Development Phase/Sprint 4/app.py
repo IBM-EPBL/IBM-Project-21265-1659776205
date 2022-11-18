@@ -78,7 +78,7 @@ conn=ibm_db.connect("DATABASE=bludb;HOSTNAME=ba99a9e6-d59e-4883-8fc0-d6a8c9f7a08
 @app.route('/', methods=['GET', 'POST'])
 def registration():
     if request.method=='GET':
-        return render_template('registration.html')
+        return render_template('signup.html')
     if request.method=='POST':
         email=request.form['email']
         password=request.form['password']
